@@ -41,18 +41,19 @@ class RefillableMarker extends RegularMarker {
     super(color, inkAmount);
   }
 
-  refill(text) {
-    this.inkAmount = 100;
-    document.write(`<p style= "color:${this.color}">${text}</p>`); 
+  refill() {
+    this.inkAmount = 100; 
   }
 }
 
 let refilledMarker = new RefillableMarker('blue', 100);
 
-refilledMarker.refill('Hello Again!');
-refilledMarker.refill('Hello Again!Spring is beautiful! There are so many things that deserve your attention.');
-refilledMarker.refill('Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
-refilledMarker.refill('Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
-refilledMarker.refill('Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
-refilledMarker.refill('Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
-
+refilledMarker.print('1. Hello Again!');
+refilledMarker.print('2. Hello Again!Spring is beautiful! There are so many things that deserve your attention.');
+refilledMarker.print('3. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
+refilledMarker.print('4. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
+refilledMarker.print('5. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
+refilledMarker.print('6. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
+refilledMarker.refill();
+refilledMarker.print('7. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
+refilledMarker.print('8. Hello Again!At this time of year later. This time of year, we also can grow plants on our balcony.');
